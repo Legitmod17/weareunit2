@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-	setlocale(0, "");
+	setlocale(LC_ALL, "Russian");
 	int choice;
 	cout << "Выберите время года:\n";
 	cout << "1. Лето\n";
@@ -11,10 +11,16 @@ int main() {
 	cout << "3. Весна\n";
 	cout << "4. Осень\n";
 	cin >> choice;
-	if (choice = 1) {
-		cout << "Наступило лето,оденься потеплее";
+	if (choice == 1){
+		cout << "Наступило лето,оденься полегче";
 	}
-	if (choice = 2) {
-	cout << "Наступила зима, одень куртку потеплее";
+	else if (choice == 2) {
+		cout << "Наступила зима, одень куртку потеплее";
 	}
+	else if (choice == 3) {
+		cout << "Наступила весна, сними шапку";
+	}
+	else if (choice == 4) {
+		cout << "Наступила осень, одень ветровку";
+}
 }
